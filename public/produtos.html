@@ -3,327 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Produtos | Akari Studio</title>
-
-  <meta
-    name="description"
-    content="Confira os produtos da Akari Studio: coasters, decoração, peças geek e criações personalizadas em 3D e laser."
-  >
-
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .catalogo { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+    .catalogo h1 { text-align: center; font-weight: 300; letter-spacing: 2px; }
+    .catalogo .intro { text-align: center; opacity: .75; margin-bottom: 30px; }
+    .catalogo h2 { margin-top: 50px; font-weight: 300; letter-spacing: 1px; border-bottom: 1px solid #e6dcd8; padding-bottom: 8px; }
+    .grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 24px; margin-top: 24px; }
+    .card { background: #fffaf7; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,.06); display: flex; flex-direction: column; }
+    .card img.capa { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+    .miniaturas { display: flex; gap: 6px; padding: 8px 14px 0; }
+    .miniaturas img { width: 44px; height: 44px; object-fit: cover; border-radius: 6px; cursor: pointer; opacity: .65; border: 2px solid transparent; }
+    .miniaturas img.ativa, .miniaturas img:hover { opacity: 1; border-color: #e8cfd0; }
+    .card .info { padding: 14px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+    .card .nome { font-size: 1.05rem; margin: 0; }
+    .card .etiqueta { font-size: .75rem; opacity: .7; text-transform: uppercase; letter-spacing: 1px; }
+    .card .preco { font-weight: 600; }
+    .card .encomenda { font-size: .8rem; opacity: .7; }
+    .card a.pedir { margin-top: auto; text-align: center; padding: 10px; border-radius: 8px; background: #e8cfd0; color: #4a3a3a; text-decoration: none; }
+    .card a.pedir:hover { background: #dfbcbd; }
+  </style>
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="container header-content">
-      <a
-        class="brand"
-        href="index.html"
-        aria-label="Voltar para a página inicial da Akari Studio"
-      >
-        <img
-          src="assets/logo/Akari_Logo.jpg"
-          alt="Akari Studio"
-        >
-      </a>
+  <main class="catalogo">
+    <h1>Nossos Produtos</h1>
+    <p class="intro">Coasters e bookmarks feitos sob encomenda, com cuidado em cada detalhe.</p>
 
-      <nav class="main-nav" aria-label="Navegação principal">
-        <a href="index.html">Início</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="index.html#personalizados">Personalizados</a>
-        <a href="index.html#contato">Contato</a>
-      </nav>
+    <h2>Coasters</h2>
+    <div class="grade" id="grade-coasters"></div>
 
-      <a
-        class="header-whatsapp"
-        href="https://wa.me/551151941220"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        WhatsApp
-      </a>
-    </div>
-  </header>
-
-  <main>
-    <section class="page-intro">
-      <div class="container">
-        <span class="eyebrow">Coleção Akari</span>
-
-        <h1>Peças para iluminar seus momentos</h1>
-
-        <p>
-          Explore nossas criações em impressão 3D, corte e gravação a laser.
-          Para comprar ou consultar disponibilidade, fale conosco pelo WhatsApp.
-        </p>
-      </div>
-    </section>
-
-    <section class="section products-page">
-      <div class="container">
-        <div class="catalog-toolbar">
-          <p>
-            Produtos disponíveis para consulta
-          </p>
-        </div>
-
-        <div class="product-grid product-grid-page">
-          <article class="product-card">
-            <div class="product-image">
-              <img
-                src="assets/produtos/Autumn_Japanese_Coaster_Mosaic.png"
-                alt="Kit de coasters com composição inspirada no outono japonês"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="product-info">
-              <span class="product-category">Coasters</span>
-              <h2>Coaster com inspiração japonesa</h2>
-              <p>
-                Uma peça decorativa para trazer personalidade à sua mesa.
-              </p>
-
-              <a
-                class="product-link"
-                href="https://wa.me/551151941220?text=Olá!%20Gostaria%20de%20consultar%20o%20coaster%20com%20inspiração%20japonesa%20da%20Akari%20Studio."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img
-                src="assets/produtos/celestial1.jpg"
-                alt="Peça decorativa da coleção Celestial"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="product-info">
-              <span class="product-category">Decoração</span>
-              <h2>Celestial</h2>
-              <p>
-                Uma criação para ambientes com atmosfera única.
-              </p>
-
-              <a
-                class="product-link"
-                href="https://wa.me/551151941220?text=Olá!%20Gostaria%20de%20consultar%20a%20peça%20Celestial%20da%20Akari%20Studio."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img
-                src="assets/produtos/grande_onda_mosaico1.png"
-                alt="Peça decorativa inspirada na grande onda"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="product-info">
-              <span class="product-category">Decoração</span>
-              <h2>Grande Onda</h2>
-              <p>
-                Arte e movimento em uma composição inspirada no Japão.
-              </p>
-
-              <a
-                class="product-link"
-                href="https://wa.me/551151941220?text=Olá!%20Gostaria%20de%20consultar%20a%20peça%20Grande%20Onda%20da%20Akari%20Studio."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img
-                src="assets/produtos/Totoro_coaster_2.png"
-                alt="Coaster com personagem de animação"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="product-info">
-              <span class="product-category">Coasters</span>
-              <h2>Coaster temático</h2>
-              <p>
-                Uma peça para quem gosta de cultura geek e animação.
-              </p>
-
-              <a
-                class="product-link"
-                href="https://wa.me/551151941220?text=Olá!%20Gostaria%20de%20consultar%20o%20coaster%20temático%20da%20Akari%20Studio."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img
-                src="assets/produtos/Cherry_Blossom_Scenic_Set6.jpg"
-                alt="Conjunto decorativo com paisagem de cerejeiras"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="product-info">
-              <span class="product-category">Decoração</span>
-              <h2>Cherry Blossom Scenic</h2>
-              <p>
-                Uma composição delicada inspirada nas cerejeiras japonesas.
-              </p>
-
-              <a
-                class="product-link"
-                href="https://wa.me/551151941220?text=Olá!%20Gostaria%20de%20consultar%20a%20peça%20Cherry%20Blossom%20Scenic%20da%20Akari%20Studio."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img
-                src="assets/produtos/Cherry_Blossom_Scenic_Set10.jpg"
-                alt="Conjunto decorativo com tema de cerejeiras"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="product-info">
-              <span class="product-category">Decoração</span>
-              <h2>Cherry Blossom Collection</h2>
-              <p>
-                Detalhes suaves para compor espaços especiais.
-              </p>
-
-              <a
-                class="product-link"
-                href="https://wa.me/551151941220?text=Olá!%20Gostaria%20de%20consultar%20a%20Cherry%20Blossom%20Collection%20da%20Akari%20Studio."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img
-                src="assets/produtos/Sakura2j.jpg"
-                alt="Peça decorativa inspirada na flor de sakura"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="product-info">
-              <span class="product-category">Decoração</span>
-              <h2>Sakura</h2>
-              <p>
-                Uma criação delicada inspirada na primavera japonesa.
-              </p>
-
-              <a
-                class="product-link"
-                href="https://wa.me/551151941220?text=Olá!%20Gostaria%20de%20consultar%20a%20peça%20Sakura%20da%20Akari%20Studio."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img
-                src="assets/produtos/zenitsu1.jpg"
-                alt="Produto geek inspirado em anime"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="product-info">
-              <span class="product-category">Geek</span>
-              <h2>Peça temática</h2>
-              <p>
-                Uma criação para fãs de cultura pop e universos fantásticos.
-              </p>
-
-              <a
-                class="product-link"
-                href="https://wa.me/551151941220?text=Olá!%20Gostaria%20de%20consultar%20a%20peça%20temática%20da%20Akari%20Studio."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar pelo WhatsApp
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+    <h2>Bookmarks</h2>
+    <div class="grade" id="grade-bookmarks"></div>
   </main>
 
-  <footer class="site-footer" id="contato">
-    <div class="container footer-content">
-      <div>
-        <h2>Akari Studio</h2>
-        <p>
-          Criações que iluminam pequenos momentos.
-        </p>
-      </div>
+  <script>
+    const WHATSAPP = "551151941220";
+    const PASTA = "assets/produtos/";
 
-      <div class="footer-links">
-        <a
-          href="https://www.instagram.com/akaristudio.br/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
+    const coasters = [
+      { nome: "Autumn Japanese", preco: 49.392, imgs: ["coasters/autumn-japanese-coaster-mosaic.png"] },
+      { nome: "Celestial", preco: 64.272, imgs: ["coasters/celestial1.jpg"] },
+      { nome: "Coaster blossom scenery", preco: 63.312, imgs: ["coasters/coaster-blossom-scenery7.jpg"], etiqueta: "Set" },
+      { nome: "Eve set #1", preco: 35.472, imgs: ["coasters/eve-set1.jpg", "coasters/eve-set2.jpg", "coasters/eve-set3.jpg"], etiqueta: "Set" },
+      { nome: "Eve set #2", preco: 34.032, imgs: ["coasters/eve-set4.jpg", "coasters/eve-set5.jpg", "coasters/eve-set6.jpg"], etiqueta: "Set" },
+      { nome: "Eve set #3", preco: 34.032, imgs: ["coasters/eve-set7.jpg", "coasters/eve-set8.jpg", "coasters/eve-set9.jpg"], etiqueta: "Set" },
+      { nome: "Grande onda mosaico", preco: 67.104, imgs: ["coasters/grande-onda-mosaico.png"] },
+      { nome: "Japanese set", preco: 62.832, imgs: ["coasters/japanese-coasters-set3.jpg"], etiqueta: "Set" },
+      { nome: "Maré ao luar", preco: 29.376, imgs: ["coasters/mare-ao-luar1.jpg"] },
+      { nome: "Pokemon mosaico", preco: 19.632, imgs: ["coasters/pokemon-mosaic1.png"] },
+      { nome: "Totoro red tree", preco: 125.76, imgs: ["coasters/totoro-coaster-2.png"] }
+    ];
 
-        <a
-          href="https://wa.me/551151941220"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          WhatsApp
-        </a>
+    const bookmarks = [
+      { nome: "Blood Moon", preco: 26.496, imgs: ["bookmarks/bloodmoon2.png"] },
+      { nome: "Bonsai Verde", preco: 10.9, imgs: ["bookmarks/bonsai2e.jpg", "bookmarks/bonsai2j.jpg"] },
+      { nome: "Bulbasauro", preco: 6, imgs: ["bookmarks/bulbasauro.jpg"] },
+      { nome: "Cerejeiras ao luar", preco: 10.752, imgs: ["bookmarks/cerejeiras-ao-luar.jpg"] },
+      { nome: "Charmander", preco: 5.52, imgs: ["bookmarks/charmander1.jpg"] },
+      { nome: "Cherry blossom set", preco: 17.568, imgs: ["bookmarks/cherry-blossom-scenic-set6.jpg", "bookmarks/cherry-blossom-scenic-set10.jpg", "bookmarks/cherry-blossom-scenic-set1.jpg", "bookmarks/cherry-blossom-scenic-set3.jpg"], etiqueta: "Set" },
+      { nome: "Cherry tide", preco: 14.976, imgs: ["bookmarks/cherrytide1.jpg"] },
+      { nome: "Floresta fantasia set", preco: 20.64, imgs: ["bookmarks/florestafantasia2.jpg"], etiqueta: "Set" },
+      { nome: "Hello Kitty set", preco: 21.168, imgs: ["bookmarks/hellokitty-set1.jpg"], etiqueta: "Set" },
+      { nome: "Huntrix", preco: 8.544, imgs: ["bookmarks/huntrix2.jpg"] },
+      { nome: "Itadori", preco: 7.776, imgs: ["bookmarks/itadori2.jpg"] },
+      { nome: "Kuromi & Melody", preco: 24.864, imgs: ["bookmarks/kuromimelody.jpg"] },
+      { nome: "Megumi", preco: 6.4848, imgs: ["bookmarks/megumi1.jpg"] },
+      { nome: "Melodia e Donzela", preco: 10.464, imgs: ["bookmarks/melodia-e-donzela.jpg"] },
+      { nome: "Nezuko (vazado)", preco: 5.808, imgs: ["bookmarks/nezuko-cutout6.jpg"] },
+      { nome: "Nezuko", preco: 7.2, imgs: ["bookmarks/nezuko1.jpg"] },
+      { nome: "Jujutsu Panda", preco: 7.8816, imgs: ["bookmarks/panda1.jpg"] },
+      { nome: "Pikachu Batalha", preco: 8.88, imgs: ["bookmarks/pikachu-batalha.jpg"] },
+      { nome: "Pikachu Lightning", preco: 6.4944, imgs: ["bookmarks/pikachu.jpg"] },
+      { nome: "Ryomen Sukuna", preco: 9.168, imgs: ["bookmarks/ryomensukuna.jpg"] },
+      { nome: "Saja Boys", preco: 8.976, imgs: ["bookmarks/saja-boys.jpg"] },
+      { nome: "Sakura framed", preco: 8.64, imgs: ["bookmarks/sakura.jpg", "bookmarks/sakura-framed1.jpg"] },
+      { nome: "Sakura set", preco: 31.008, imgs: ["bookmarks/sakuradarkset.jpg"], etiqueta: "Set" },
+      { nome: "Satoru Gojo", preco: 8.64, imgs: ["bookmarks/satorugojo1.jpg"] },
+      { nome: "Squirtle", preco: 6.0096, imgs: ["bookmarks/squirtle.jpg"] },
+      { nome: "Tanjiro chamas", preco: 8.448, imgs: ["bookmarks/tanjiro2.jpg", "bookmarks/tanjiro3.jpg"] },
+      { nome: "Totoro Gogh", preco: 8.16, imgs: ["bookmarks/totoro-gogh1.jpg"] },
+      { nome: "Totoro rain leaf", preco: 6.432, imgs: ["bookmarks/totoro-rain-leaf-bookmark3.jpg", "bookmarks/totoro-rain-leaf-bookmark4.jpg"] },
+      { nome: "Zenitsu", preco: 7.776, imgs: ["bookmarks/zenitsu1.jpg"] }
+    ];
 
-        <a href="index.html">
-          Início
-        </a>
-      </div>
-    </div>
+    function formatarPreco(valor) {
+      return "R$ " + valor.toFixed(2).replace(".", ",");
+    }
 
-    <div class="container footer-bottom">
-      <p>© 2026 Akari Studio. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+    function trocarFoto(miniatura, caminho) {
+      const card = miniatura.closest(".card");
+      card.querySelector(".capa").src = caminho;
+      card.querySelectorAll(".miniaturas img").forEach(function (m) { m.classList.remove("ativa"); });
+      miniatura.classList.add("ativa");
+    }
+
+    function criarCard(p) {
+      const msg = encodeURIComponent("Olá! Tenho interesse no produto: " + p.nome);
+      const etiqueta = p.etiqueta ? '<span class="etiqueta">' + p.etiqueta + '</span>' : "";
+      let miniaturas = "";
+      if (p.imgs.length > 1) {
+        miniaturas = '<div class="miniaturas">' + p.imgs.map(function (img, i) {
+          const caminho = PASTA + img;
+          return '<img src="' + caminho + '" alt="' + p.nome + ' foto ' + (i + 1) + '"' +
+            (i === 0 ? ' class="ativa"' : '') +
+            ' onclick="trocarFoto(this, \'' + caminho + '\')">';
+        }).join("") + '</div>';
+      }
+      return '<article class="card">' +
+        '<img class="capa" src="' + PASTA + p.imgs[0] + '" alt="' + p.nome + '" loading="lazy">' +
+        miniaturas +
+        '<div class="info">' + etiqueta +
+        '<h3 class="nome">' + p.nome + '</h3>' +
+        '<span class="preco">' + formatarPreco(p.preco) + '</span>' +
+        '<span class="encomenda">Feito sob encomenda</span>' +
+        '<a class="pedir" href="https://wa.me/' + WHATSAPP + '?text=' + msg + '" target="_blank" rel="noopener">Pedir pelo WhatsApp</a>' +
+        '</div></article>';
+    }
+
+    document.getElementById("grade-coasters").innerHTML = coasters.map(criarCard).join("");
+    document.getElementById("grade-bookmarks").innerHTML = bookmarks.map(criarCard).join("");
+  </script>
 </body>
 </html>
