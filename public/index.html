@@ -3,262 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Akari Studio | Impressão 3D e Corte a Laser</title>
-
-  <meta
-    name="description"
-    content="Conheça a Akari Studio: peças criativas em impressão 3D, corte e gravação a laser para decorar, presentear e personalizar."
-  >
-
+  <title>Akari Studio | Coasters e Bookmarks</title>
+  <meta name="description" content="Coasters e bookmarks feitos sob encomenda, com inspiração japonesa e detalhes geek.">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .topo { text-align: center; padding: 50px 20px 20px; }
+    .topo img { max-width: 160px; height: auto; }
+    .hero { max-width: 760px; margin: 0 auto; text-align: center; padding: 30px 20px 50px; }
+    .hero h1 { font-weight: 300; letter-spacing: 2px; margin-bottom: 10px; }
+    .hero p { opacity: .8; line-height: 1.6; }
+    .botoes { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+    .botoes a { padding: 12px 26px; border-radius: 10px; text-decoration: none; color: #4a3a3a; background: #e8cfd0; }
+    .botoes a.sec { background: transparent; border: 1px solid #e8cfd0; }
+    .botoes a:hover { background: #dfbcbd; }
+    .destaques { max-width: 900px; margin: 0 auto; padding: 0 20px 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .destaques a { display: block; background: #fffaf7; border-radius: 14px; padding: 26px; text-align: center; text-decoration: none; color: inherit; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+    .destaques h2 { font-weight: 300; margin: 0 0 8px; }
+    .destaques p { margin: 0; opacity: .7; font-size: .95rem; }
+    footer { text-align: center; padding: 30px 20px; border-top: 1px solid #e6dcd8; opacity: .85; }
+    footer a { color: inherit; margin: 0 8px; }
+  </style>
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="container header-content">
-      <a class="brand" href="index.html" aria-label="Página inicial da Akari Studio">
-        <img
-          src="assets/logo/Akari_Logo.jpg"
-          alt="Akari Studio"
-        >
-      </a>
-
-      <nav class="main-nav" aria-label="Navegação principal">
-        <a href="#categorias">Categorias</a>
-        <a href="#destaques">Destaques</a>
-        <a href="#personalizados">Personalizados</a>
-        <a href="#contato">Contato</a>
-      </nav>
-
-      <a
-        class="header-whatsapp"
-        href="https://wa.me/551151941220"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        WhatsApp
-      </a>
-    </div>
+  <header class="topo">
+    <img src="assets/logo/logo.jpg" alt="Akari Studio">
   </header>
 
   <main>
     <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <span class="eyebrow">Akari Studio</span>
-
-          <h1>Detalhes que iluminam</h1>
-
-          <p>
-            Peças criativas em impressão 3D, corte e gravação a laser
-            para transformar ambientes, presentes e momentos especiais.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#destaques">
-              Explorar produtos
-            </a>
-
-            <a class="button button-secondary" href="#personalizados">
-              Criar algo especial
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-image">
-          <img
-            src="assets/produtos/cherry-blossom-scenic-6.jpg"
-            alt="Peça decorativa com inspiração em cerejeiras japonesas"
-          >
-        </div>
+      <h1>Akari Studio</h1>
+      <p>Coasters e bookmarks com inspiração japonesa, tons suaves e pequenos detalhes geek. Cada peça é feita sob encomenda, com cuidado do começo ao fim.</p>
+      <div class="botoes">
+        <a href="produtos.html">Ver produtos</a>
+        <a class="sec" href="https://wa.me/551151941220" target="_blank" rel="noopener">Falar no WhatsApp</a>
       </div>
     </section>
 
-    <section class="section" id="categorias">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Explore</span>
-          <h2>Encontre sua peça</h2>
-          <p>
-            Criações pensadas para decorar, presentear e tornar seus espaços
-            mais pessoais.
-          </p>
-        </div>
-
-        <div class="category-grid">
-          <a class="category-card category-card-pink" href="#destaques">
-            <span class="category-symbol">桜</span>
-            <h3>Coasters</h3>
-            <p>Pequenos detalhes para seus momentos.</p>
-          </a>
-
-          <a class="category-card category-card-lavender" href="#destaques">
-            <span class="category-symbol">栞</span>
-            <h3>Marcadores</h3>
-            <p>Para acompanhar suas melhores leituras.</p>
-          </a>
-
-          <a class="category-card category-card-green" href="#destaques">
-            <span class="category-symbol">灯</span>
-            <h3>Decoração</h3>
-            <p>Peças que transformam a atmosfera.</p>
-          </a>
-
-          <a class="category-card category-card-gold" href="#personalizados">
-            <span class="category-symbol">光</span>
-            <h3>Personalizados</h3>
-            <p>Uma ideia criada especialmente para você.</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="destaques">
-      <div class="container">
-        <div class="section-heading section-heading-row">
-          <div>
-            <span class="eyebrow">Seleção Akari</span>
-            <h2>Peças em destaque</h2>
-          </div>
-
-          <a class="text-link" href="#contato">
-            Fale conosco →
-          </a>
-        </div>
-
-        <div class="product-grid">
-          <article class="product-card">
-            <div class="product-image">
-              <img
-                src="assets/produtos/autumn-japanese-coaster-mosaic.png"
-                alt="Kit de coasters com inspiração japonesa"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="product-info">
-              <span class="product-category">Coasters</span>
-              <h3>Kit de Coasters</h3>
-              <p>Uma composição delicada para sua mesa.</p>
-              <a
-                class="product-link"
-                href="https://wa.me/551151941220?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20kit%20de%20coasters%20da%20Akari%20Studio."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar produto
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img
-                src="assets/produtos/grande-onda-mosaico.png"
-                alt="Peça decorativa com inspiração em ondas japonesas"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="product-info">
-              <span class="product-category">Decoração</span>
-              <h3>Grande Onda</h3>
-              <p>Arte e personalidade em uma única peça.</p>
-              <a
-                class="product-link"
-                href="https://wa.me/551151941220?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20peça%20Grande%20Onda."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar produto
-              </a>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-image">
-              <img
-                src="assets/produtos/sakura.jpg"
-                alt="Peça decorativa com tema de sakura"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="product-info">
-              <span class="product-category">Decoração</span>
-              <h3>Sakura</h3>
-              <p>Leveza e inspiração japonesa para seu espaço.</p>
-              <a
-                class="product-link"
-                href="https://wa.me/551151941220?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20peça%20Sakura."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Consultar produto
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="custom-section" id="personalizados">
-      <div class="container custom-content">
-        <div>
-          <span class="eyebrow">Sob encomenda</span>
-
-          <h2>Feito para você</h2>
-
-          <p>
-            Tem uma ideia em mente? Fale conosco para criar uma peça
-            personalizada em impressão 3D ou corte e gravação a laser.
-          </p>
-        </div>
-
-        <a
-          class="button button-light"
-          href="https://wa.me/551151941220?text=Olá!%20Gostaria%20de%20solicitar%20uma%20peça%20personalizada."
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Solicitar personalização
-        </a>
-      </div>
+    <section class="destaques">
+      <a href="produtos.html#grade-coasters">
+        <h2>Coasters</h2>
+        <p>Para dar charme à sua mesa.</p>
+      </a>
+      <a href="produtos.html#grade-bookmarks">
+        <h2>Bookmarks</h2>
+        <p>Para acompanhar cada leitura.</p>
+      </a>
     </section>
   </main>
 
-  <footer class="site-footer" id="contato">
-    <div class="container footer-content">
-      <div>
-        <h2>Akari Studio</h2>
-        <p>
-          Criações que iluminam pequenos momentos.
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <a
-          href="https://www.instagram.com/akaristudio.br/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
-
-        <a
-          href="https://wa.me/551151941220"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          WhatsApp
-        </a>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <p>© 2026 Akari Studio. Todos os direitos reservados.</p>
-    </div>
+  <footer>
+    <p>
+      <a href="https://wa.me/551151941220" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://instagram.com/akaristudio.br" target="_blank" rel="noopener">@akaristudio.br</a>
+    </p>
+    <p>© Akari Studio</p>
   </footer>
 </body>
 </html>
